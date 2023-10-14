@@ -1,60 +1,48 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import {
   Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
+  CardFooter,
+  CardTitle
 } from "@/components/ui/card";
 
 const Course = () => {
+  const cardStyle: CSSProperties = {
+    backgroundImage: 'url("./logocps.png")',
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    height: "300px",
+    width: "300px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    borderRadius: "20px",
+  };
+
   return (
-    <div className="flex justify-around">
-        <div>
-        <Card className="text-center">
-        <CardHeader>
-          <CardTitle>Linux</CardTitle>
-        </CardHeader>
-      </Card>
-      <Card className="my-4">
-        <CardHeader>
-          <CardTitle>Linux</CardTitle>
-          <CardDescription>Card Description 1</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p>Card Content 1</p>
-        </CardContent>
-      </Card>
+    <div className="flex justify-around mx-4 sm:mx-8 p-4 sm:p-8 flex-wrap">
+      <div className="mb-4">
+        <Card style={cardStyle}>
+          <CardFooter>
+            <CardTitle className="flex-end">Linux</CardTitle>
+          </CardFooter>
+        </Card>
       </div>
-      <div>
-        <Card className="text-center">
-        <CardHeader>
-          <CardTitle>Linux</CardTitle>
-        </CardHeader>
-      </Card>
-      <Card className="my-4">
-        <CardHeader>
-          <CardTitle>Linux</CardTitle>
-          <CardDescription>Card Description 1</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p>Card Content 1</p>
-        </CardContent>
-      </Card>
+      <div className="mb-4">
+        <Card style={cardStyle}>
+          <CardFooter>
+            <CardTitle className="flex-end">IoT</CardTitle>
+          </CardFooter>
+        </Card>
       </div>
-      <div>
-        <Card className="text-center">
-        <CardHeader>
-          <CardTitle>Linux</CardTitle>
-        </CardHeader>
-      </Card>
-      <Card className="my-4">
-        <CardContent>
-          <p>Card Content 1</p>
-        </CardContent>
-      </Card>
+      <div className="mb-4">
+        <Card style={cardStyle}>
+          <CardFooter>
+            <CardTitle className="flex-end">Website Dev.</CardTitle>
+          </CardFooter>
+        </Card>
       </div>
-      </div>
+    </div>
   );
 };
 
