@@ -6,8 +6,8 @@ const About = () => {
   return (
     <div className="flex items-center justify-center h-screen relative">
       <div className="w-1/2 p-8 items-end">
-        <p className="max-w-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p className="text-lg font-castoro leading-6  max-w-lg">
+          Cyber academy adalah sebuah rangkaian studi grup yang inovatif dan dinamis, menghadirkan platform belajar yang memungkinkan partisipan untuk merajut jaringan pengetahuan yang luas.
         </p>
       </div>
       <div className="w-1/2">

@@ -2,25 +2,20 @@
 import React from 'react';
 
 const ContentSplit: React.FC = () => {
+  const customColor = '#BA2025'; // Custom color code
+
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center p-10 md:p-20">
-      <div className="w-full md:w-1/2 mb-6 md:mb-0">
-        <img
-          src="./logocps.png"
-          alt="Image description"
-          className="w-full max-w-sm mx-auto"
-        />
-      </div>
-      <div className="w-full md:w-1/2 md:ml-6">
+    <div className="flex justify-center items-center p-10">
+      <div style={{ backgroundColor: customColor }} className="rounded-2xl p-10 w-full max-w-xl text-white">
         <div>
-          <h2 className="text-xl font-bold mb-4 text-center md:text-left">
+          <h2 className="text-xl font-bold mb-4 text-center">
             Syarat dan Ketentuan
           </h2>
-          <ol className="list-decimal text-center md:text-left">
-            <li>Bertakwa kepada Tuhan Yang Maha Esa</li>
-            <li>Mahasiswa aktif Telkom University</li>
-            <li>Mahasiswa FTE & FRI 2021, 2022, 2023</li>
-            <li>Memiliki motivasi dan minat belajar yang tinggi</li>
+          <ol className="list-decimal pl-4 mx-auto max-w-full text-base leading-relaxed">
+            <li className="ml-6">Bertakwa kepada Tuhan Yang Maha Esa</li>
+            <li className="ml-6">Mahasiswa aktif Telkom University</li>
+            <li className="ml-6">Mahasiswa FTE & FRI 2021, 2022, 2023</li>
+            <li className="ml-6">Memiliki motivasi dan minat belajar yang tinggi</li>
           </ol>
         </div>
       </div>

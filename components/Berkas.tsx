@@ -25,6 +25,10 @@ const Berkas = () => {
   };
 
   return (
+    <div>
+      <div className="flex justify-center">
+      <h1 className="text-2xl font-bold mb-4">Berkas</h1>
+      </div>
     <div className="flex justify-around mx-4 sm:mx-8 p-4 sm:p-8 flex-wrap">
       <div className="mb-4">
         <Card style={cardStyle}>
@@ -105,6 +109,7 @@ const Berkas = () => {
           </CardFooter>
         </Card>
       </div>
+    </div>
     </div>
   );
 };

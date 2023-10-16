@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
-const Link = ({ href, children }) => (
+interface LinkProps {
+  href: string;
+  children: React.ReactNode;
+}
+
+const Link = ({ href, children }: LinkProps) => (
   <ScrollLink
     activeClass="active"
     to={href}
