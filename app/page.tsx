@@ -17,10 +17,10 @@ export default function Home() {
           <About />
         </div>
         <div>
-          <h1 className='text-5xl font-bold text-center'>
-          Benefit you will get
-            </h1>
           <Benefit />
+        </div>
+        <div>
+          <Course />
         </div>
         <div>
           <SdanK />

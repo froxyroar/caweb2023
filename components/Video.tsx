@@ -63,7 +63,7 @@ export default function Video() {
         ref={videoRef}
         style={{ width: '100%', borderRadius: '12px' }}
       >
-        <source src="/test.mp4" type="video/mp4" />
+        <source src="/teaser.mp4" type="video/mp4" />
       </video>
       <div
         style={{

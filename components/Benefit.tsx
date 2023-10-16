@@ -26,30 +26,36 @@ const Benefits = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen" style={customStyle}>
+    <div>
+                <h1 className='text-5xl font-bold text-center'>
+          Benefit you will get
+            </h1>
+    <div className="flex flex-col items-center justify-center min-h-screen" style={customStyle} id="benefit">
       <div className="flex justify-around mx-4 sm:mx-8 p-4 sm:p-8 flex-wrap">
-        <div className="mb-4">
+        <div className="mr-4">
           <Card style={cardStyle}>
             <CardHeader>
-              <CardTitle className="text-center text-white">Linux</CardTitle>
+              <CardTitle className="text-center text-white">TAK</CardTitle>
             </CardHeader>
           </Card>
         </div>
-        <div className="mb-4">
+        <div className="mr-4">
+          
           <Card style={cardStyle}>
             <CardHeader>
-              <CardTitle className="text-center text-white">IoT</CardTitle>
+              <CardTitle className="text-center text-white">E-CERTIFICATE</CardTitle>
             </CardHeader>
           </Card>
         </div>
-        <div className="mb-4">
+        <div className="mb-20 mr-4">
           <Card style={cardStyle}>
             <CardHeader>
-              <CardTitle className="text-center text-white">Website Dev.</CardTitle>
+              <CardTitle className="text-center text-white">KNOWLEDGE</CardTitle>
             </CardHeader>
           </Card>
         </div>
       </div>
+    </div>
     </div>
   );
 };

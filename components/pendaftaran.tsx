@@ -41,7 +41,7 @@ const Daftar = () => {
         {participantsLeft > 0 ? 'Daftar' : 'Registration Closed'}
       </button>
 
-      <p className="text-center mt-4">
+      <p className="text-center mt-6 mb-20">
         {participantsLeft > 0
           ? `${participantsLeft} participants left.`
           : 'The maximum limit of 60 participants has been reached.'}

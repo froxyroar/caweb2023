@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
@@ -22,32 +22,6 @@ const Navbar = () => {
     boxShadow: isScrolled ? '0 4px 6px rgba(0, 0, 0, 0.1)' : 'none',
   };
 
-  const handleScrollToAbout = () => {
-    scroll.scrollTo(700, {
-      duration: 800,
-      smooth: 'easeInOutQuart',
-      offset: -100,
-      containerId: 'scroll-container', // Add a container ID where the scroll should happen
-    });
-  };
-  const handleScrollToBenefit = () => {
-    scroll.scrollTo(1400, {
-      duration: 800,
-      smooth: 'easeInOutQuart',
-      offset: -100,
-      containerId: 'scroll-container', // Add a container ID where the scroll should happen
-    });
-  };
-
-  const handleScrollToDaftar = () => {
-    scroll.scrollTo(2100, {
-      duration: 800,
-      smooth: 'easeInOutQuart',
-      offset: -100,
-      containerId: 'scroll-container', // Add a container ID where the scroll should happen
-    });
-  };
-
   return (
     <nav className={`navbar sticky top-0 z-50 ${isScrolled ? 'scrolled' : ''}`} style={navbarStyle}>
       <div className="container mx-auto flex items-center justify-between p-4">
@@ -55,26 +29,26 @@ const Navbar = () => {
           <img src="./logocps.png" alt="Logo" className="h-8"/>
         </a>
 
-        <a className="text-xl font-bold ml-2" href="/" rel="noopener noreferrer">
+        <a className="text-xl font-bold ml-40" href="/" rel="noopener noreferrer">
           Cyber Academy
         </a>
         <ul className="flex space-x-4">
           <li>
-            <ScrollLink to="about" smooth={true} offset={-100} duration={500} onClick={handleScrollToAbout}>
+            <ScrollLink to="about" smooth={true} offset={-100} duration={500}>
               <button>
                 About
               </button>
             </ScrollLink>
           </li>
           <li>
-            <ScrollLink to="about" smooth={true} offset={-100} duration={500} onClick={handleScrollToBenefit}>
+            <ScrollLink to="benefit" smooth={true} offset={-100} duration={500}>
               <button>
                 Benefit
               </button>
             </ScrollLink>
           </li>
           <li>
-          <ScrollLink to="about" smooth={true} offset={-100} duration={500} onClick={handleScrollToDaftar}>
+            <ScrollLink to="daftar" smooth={true} offset={-100} duration={500}>
               <button>
                 Daftar
               </button>

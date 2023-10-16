@@ -5,10 +5,10 @@ const ContentSplit: React.FC = () => {
   const customColor = '#BA2025'; // Custom color code
 
   return (
-    <div className="flex justify-center items-center p-10">
+    <div className="flex justify-center items-center p-1 mt-8 mb-40" id='daftar'>
       <div style={{ backgroundColor: customColor }} className="rounded-2xl p-10 w-full max-w-xl text-white">
         <div>
-          <h2 className="text-xl font-bold mb-4 text-center">
+          <h2 className="text-xl font-bold mb-8 text-center">
             Syarat dan Ketentuan
           </h2>
           <ol className="list-decimal pl-4 mx-auto max-w-full text-base leading-relaxed">
