@@ -19,6 +19,7 @@ const Label = React.forwardRef<
     ref={ref}
     className={cn(labelVariants(), className)}
     {...props}
+    style={{ color: "#231f20" }}
   />
 ))
 Label.displayName = LabelPrimitive.Root.displayName

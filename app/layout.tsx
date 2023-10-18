@@ -21,7 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-red-100 ${inter.className}`} style={{ backgroundColor: '#F4F4F4' }}>
-        <Nav />
         <main>{children}</main>
       </body>
     </html>

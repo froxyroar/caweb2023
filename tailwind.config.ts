@@ -17,6 +17,15 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'forest-road': ['f Forest Road', 'sans-serif'],
+      },
+      letterSpacing: {
+        '1': '0.5em',
+        '2': '0.3em',
+        '3': '0.1em',
+        // Add more classes and values as needed
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
