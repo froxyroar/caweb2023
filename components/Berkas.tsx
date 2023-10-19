@@ -19,15 +19,16 @@ const Berkas = () => {
     color: "#BFBFBF",
     fontSize: "12px",
     marginTop: "10px",
+
   };
   const svgStyle: CSSProperties = {
     width: "40%",  // Adjust the width as needed
-    height: "40%",  // Adjust the height as needed
+    height: "35%",  // Adjust the height as needed
     display: "block",
     margin: "auto", // Center horizontally
     verticalAlign: "middle", // Center vertically
     marginTop: "50px",
-    marginBottom: "40px",
+    marginBottom: "42px",
   };
 
   return (
@@ -43,7 +44,7 @@ const Berkas = () => {
           <CardTitle className="text-center text-sm font-bold mb-2" style={{ fontSize: "24px" }}>Creative CV</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-2 mt-10 mb-4 ">Curriculum Vitae (CV) kreatif yang mencerminkan riwayat pendidikan, pengalaman, dan keterampilan Anda</p>
+            <p className="text-center text-2 mt-10 mb-4 ">Curriculum Vitae (CV) kreatif yang mencerminkan riwayat pendidikan, pengalaman, dan keterampilan Anda</p>
           </CardContent>
           <CardFooter className="text-2 mt-32 mb-2 font-bold"><p>Format nama file: <p>CV_Nama</p></p></CardFooter>
         </Card>
@@ -56,9 +57,9 @@ const Berkas = () => {
           </CardHeader>
           <CardContent>
             <ul>
-              <li className="text-2 mt-10 mb-2">Kemeja bebas, celana Panjang (Laki-laki).</li>
-              <li className="text-2 mt-4 mb-2">Kemeja bebas, rok Panjang (Perempuan) </li>
-              <li className="text-2 mt-4 mb-2">Jika hijab menggunakan kerudung segi empat Jika non hijab rambut diikat rapi.
+              <li className="text-center text-2 mt-10 mb-2">Kemeja bebas, celana Panjang (Laki-laki).</li>
+              <li className="text-center text-2 mt-4 mb-2">Kemeja bebas, rok Panjang (Perempuan) </li>
+              <li className="text-center text-2 mt-4 mb-2">Jika hijab menggunakan kerudung segi empat dan Jika non hijab rambut diikat rapi
               </li>
             </ul>
           </CardContent>
@@ -72,7 +73,7 @@ const Berkas = () => {
             <CardTitle className="text-center text-sm font-bold mb-2" style={{ fontSize: "24px" }}>Deskripsi Diri</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-2 mt-10 mb-2">dokumen yang berisi deskripsi diri Anda, termasuk hobi, minat, atau aspek pribadi lainnya yang ingin Anda bagikan.</p>
+            <p className="text-center text-2 mt-10 mb-2">dokumen yang berisi deskripsi diri Anda, termasuk hobi, minat, atau aspek pribadi lainnya yang ingin Anda bagikan</p>
           </CardContent>
           <CardFooter>
             <p className="text-2 mt-32 mb-2 font-bold">Format nama file :<p> Deskripsi diri_Nama</p></p>
@@ -86,7 +87,7 @@ const Berkas = () => {
             <CardTitle className="text-center font-bold" style={{ fontSize: "24px" }}>Visi, Misi, dan Motivasi</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-2 mt-10 mb-2">Visi, misi dan motivasi untuk mengikuti Cyber Academy.</p>
+            <p className=" text-center text-2 mt-10 mb-2">Visi, misi dan motivasi untuk mengikuti Cyber Academy</p>
           </CardContent>
           <CardFooter>
             <p className="text-2 mt-40 mb-20 font-bold">Format nama file : <p>Visi, Misi, dan Motivasi_Nama</p></p>
@@ -100,7 +101,7 @@ const Berkas = () => {
             <CardTitle className="text-center text-sm font-bold mb-2 mt-2" style={{ fontSize: "24px" }}>Essay</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-2 mt-10 mb-2">Essai mengenai salah satu topik berikut:</p>
+            <p className="text-center text-2 mt-10 mb-2">Essai mengenai salah satu topik berikut:</p>
             <ul className="list-disc text-2 mt-10 mb-2 ml-4">
               
               <li>Cyber Physical System</li>

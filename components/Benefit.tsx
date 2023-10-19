@@ -12,7 +12,6 @@ const Benefits = () => {
   };
 
   const cardStyle: CSSProperties = {
-    backgroundColor: "#BA2025",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     height: "250px",
@@ -22,18 +21,18 @@ const Benefits = () => {
     justifyContent: "center",
     alignItems: "center",
     borderRadius: "20px",
-    margin: "0 12px", // Adjust the margin between cards
+    margin: "12px", // Adjust the margin between cards
+    marginTop: "16px"
   };
 
-  return (
-    <div>
-                <h1 className='text-5xl font-bold text-center'>
+  return (    
+    <div className="flex flex-col items-center justify-center min-h-screen" >
+    <h1 className="text-5xl font-bold text-center mb-20" style={customStyle} id="benefit">
           Benefit you will get
             </h1>
-    <div className="flex flex-col items-center justify-center min-h-screen" style={customStyle} id="benefit">
       <div className="flex justify-around mx-4 sm:mx-8 p-4 sm:p-8 flex-wrap">
         <div className="mr-4">
-          <Card style={cardStyle}>
+          <Card style={cardStyle} className="bg-red-700 hover:bg-red-600 transform hover:scale-105 transition duration-300 ease-in-out">
             <CardHeader>
               <CardTitle className="text-center text-white"style={{ fontSize: "24px" }}>TAK</CardTitle>
             </CardHeader>
@@ -41,21 +40,20 @@ const Benefits = () => {
         </div>
         <div className="mr-4">
           
-          <Card style={cardStyle}>
+          <Card style={cardStyle} className="bg-red-700 hover:bg-red-600 transform hover:scale-105 transition duration-300 ease-in-out">
             <CardHeader>
               <CardTitle className="text-center text-white"style={{ fontSize: "24px" }}>E-CERTIFICATE</CardTitle>
             </CardHeader>
           </Card>
         </div>
-        <div className="mb-2 mr-4">
-          <Card style={cardStyle}>
+        <div className="mb-8 mr-4">
+          <Card style={cardStyle} className="bg-red-700 hover:bg-red-600 transform hover:scale-105 transition duration-300 ease-in-out">
             <CardHeader>
               <CardTitle className="text-center text-white" style={{ fontSize: "24px" }}>KNOWLEDGE</CardTitle>
             </CardHeader>
           </Card>
         </div>
       </div>
-    </div>
     </div>
   );
 };
