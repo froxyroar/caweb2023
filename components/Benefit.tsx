@@ -15,14 +15,14 @@ const Benefits = () => {
     backgroundColor: "#BA2025",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    height: "300px",
+    height: "250px",
     width: "300px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     borderRadius: "20px",
-    margin: "0 10px", // Adjust the margin between cards
+    margin: "0 12px", // Adjust the margin between cards
   };
 
   return (
@@ -35,7 +35,7 @@ const Benefits = () => {
         <div className="mr-4">
           <Card style={cardStyle}>
             <CardHeader>
-              <CardTitle className="text-center text-white">TAK</CardTitle>
+              <CardTitle className="text-center text-white"style={{ fontSize: "24px" }}>TAK</CardTitle>
             </CardHeader>
           </Card>
         </div>
@@ -43,14 +43,14 @@ const Benefits = () => {
           
           <Card style={cardStyle}>
             <CardHeader>
-              <CardTitle className="text-center text-white">E-CERTIFICATE</CardTitle>
+              <CardTitle className="text-center text-white"style={{ fontSize: "24px" }}>E-CERTIFICATE</CardTitle>
             </CardHeader>
           </Card>
         </div>
-        <div className="mb-20 mr-4">
+        <div className="mb-2 mr-4">
           <Card style={cardStyle}>
             <CardHeader>
-              <CardTitle className="text-center text-white">KNOWLEDGE</CardTitle>
+              <CardTitle className="text-center text-white" style={{ fontSize: "24px" }}>KNOWLEDGE</CardTitle>
             </CardHeader>
           </Card>
         </div>
