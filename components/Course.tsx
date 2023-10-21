@@ -47,19 +47,19 @@ const Benefits = () => {
 
   return (
     <div className="text-center mt-8">
-      <h1 className='text-5xl font-bold'>
+      <h1 className='text-5xl font-bold mb-16'>
         What will you learn?
       </h1>
       <div className="flex flex-col items-center justify-center mt-8" style={customStyle} id="benefit">
         <div className="flex justify-around mx-4 sm:mx-8 p-4 sm:p-8 flex-wrap">
           {cardStylesWithBackgrounds.map((style, index) => (
-            <div key={index} className="mb-40">
+            <div key={index} className="mb-40 mx-8">
               <Card style={style}>
                 <CardHeader>
                 </CardHeader>
               </Card>
-              <div className="text-center" style={{ marginTop: "10px" }}>
-                {index === 0 ? "Linux" : index === 1 ? "IoT" : "Website Dev."}
+              <div className="text-center" style={{ marginTop: "16px", fontSize: "20px"}} >
+                {index === 0 ? "Linux" : index === 1 ? "IoT" : "Web Development"}
               </div>
             </div>
           ))}
