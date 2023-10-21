@@ -1,9 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { useRouter } from 'next/navigation';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
+import userImage from "@/public/userid.png";
+import mahasiswaImage from "@/public/dataMahasiswaP.png";
+import Image from "next/image";
 import {
   Select,
   SelectContent,
@@ -21,10 +26,6 @@ import {
   CardFooter,
   CardTitle,
 } from "./ui/card";
-import { Checkbox } from "@/components/ui/checkbox";
-import userImage from "@/public/userid.png";
-import mahasiswaImage from "@/public/dataMahasiswaP.png";
-import Image from "next/image";
 
 interface FormData {
   name: string;
@@ -41,28 +42,38 @@ interface FormData {
 
 export default function GeneralQuestionForm() {
   const {
-    
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<FormData>();
-  
+
+  const router = useRouter();
+
   const [showPopup, setShowPopup] = useState(false);
   const openPopup = () => {
     setShowPopup(true);
   };
   const closePopup = () => {
     setShowPopup(false);
-  };
-  
+    if (isFormSubmitted) {
+      router.push('/'); // Navigate to the home page
+    }  };
+
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   function onSubmit(data: FormData) {
-    openPopup();
-    console.log(data);
-    
+    if (!isFormSubmitted) {
+      setIsFormSubmitted(true);
+      openPopup();
+      console.log(data);
+    }
   }
 
   return (
-    <div className="min-h-screen mt-5 md:mt-7 lg:mt-10" style={{ backgroundColor: "#F4F4F4" }}>
+    <div
+      className="min-h-screen mt-5 md:mt-7 lg:mt-10"
+      style={{ backgroundColor: "#F4F4F4" }}
+    >
       <div>
         {/* <header className="flex items-center justify-center text-[28px] font-bold font-forest-road mt-8 mb-9 drop-shadow-md md:text-[45px] md:mt-12 md:mb-12 lg:text-[55px] lg:mt-10 lg:mb-12"
         style={{color: "#91914d"}}>
@@ -97,9 +108,7 @@ export default function GeneralQuestionForm() {
             className="max-w-sm w-full lg:scale-110"
           >
             <div className="mb-8 mt-8">
-              <Label htmlFor="name">
-                Nama
-              </Label>
+              <Label htmlFor="name">Nama</Label>
               <Input
                 type="text"
                 id="name"
@@ -113,9 +122,7 @@ export default function GeneralQuestionForm() {
             </div>
 
             <div className="mb-8">
-              <Label htmlFor="email">
-                Email
-              </Label>
+              <Label htmlFor="email">Email</Label>
               <Input
                 type="email"
                 id="email"
@@ -132,9 +139,7 @@ export default function GeneralQuestionForm() {
 
             <div className="flex mb-8">
               <div className="mr-5">
-                <Label htmlFor="phone">
-                  No. WhatsApp
-                </Label>
+                <Label htmlFor="phone">No. WhatsApp</Label>
                 <Input
                   className="size-20px"
                   type="tel"
@@ -143,8 +148,8 @@ export default function GeneralQuestionForm() {
                   {...register("phone", {
                     required: "Please enter your phone number",
                   })}
-                  style={{color: "#231f20"}}
-                  />
+                  style={{ color: "#231f20" }}
+                />
                 {errors.phone && (
                   <span style={{ color: "#ba2025" }}>
                     {errors.phone.message}
@@ -152,9 +157,7 @@ export default function GeneralQuestionForm() {
                 )}
               </div>
               <div>
-                <Label htmlFor="gender">
-                  Jenis Kelamin
-                </Label>
+                <Label htmlFor="gender">Jenis Kelamin</Label>
                 <Select>
                   <SelectTrigger className="w-[180px]">
                     <SelectValue placeholder="Select an Option" />
@@ -256,10 +259,10 @@ export default function GeneralQuestionForm() {
                 style={{ color: "#231f20" }}
               />
               {errors.department && (
-                  <span style={{ color: "#ba2025" }}>
-                    {errors.department.message}
-                  </span>
-                )}
+                <span style={{ color: "#ba2025" }}>
+                  {errors.department.message}
+                </span>
+              )}
             </div>
             <div className="flex mb-8 mt-8">
               <div className="mr-5">
@@ -272,9 +275,7 @@ export default function GeneralQuestionForm() {
                   style={{ color: "#231f20" }}
                 />
                 {errors.nim && (
-                  <span style={{ color: "#ba2025" }}>
-                    {errors.nim.message}
-                  </span>
+                  <span style={{ color: "#ba2025" }}>{errors.nim.message}</span>
                 )}
               </div>
               <div>
@@ -307,40 +308,58 @@ export default function GeneralQuestionForm() {
                 style={{ color: "#231f20" }}
               />
               {errors.fileLink && (
-                  <span style={{ color: "#ba2025" }}>
-                    {errors.fileLink.message}
-                  </span>
-                )}
+                <span style={{ color: "#ba2025" }}>
+                  {errors.fileLink.message}
+                </span>
+              )}
             </div>
             <div className="flex items-center space-x-2">
               <Checkbox
                 id="terms"
-                style={{ boxShadow: "0 2px 4px rgba(0, 0, 0, 0.5)"}}
+                style={{ boxShadow: "0 2px 4px rgba(0, 0, 0, 0.5)" }}
               />
               <Label htmlFor="terms">
                 Data yang saya isi sudah benar, saya ingin submit
               </Label>
             </div>
             <div className="flex justify-center">
-              <Button onClick={openPopup} className="mt-8 mb-8 item " type="submit" style={{background: "#ba2025"}}>
+              <Button
+                onClick={openPopup}
+                className="mt-8 mb-8 item "
+                type="submit"
+                style={{ background: "#ba2025" }}
+              >
                 Submit
               </Button>
-              </div>
-              {showPopup && (
-                <div className="fixed inset-0 z-30 overflow-hidden bg-opacity-80 bg-blur backdrop-filter backdrop-blur-md flex items-center justify-center">    
-                  <div className="popup-content w-96 p-8 bg-white rounded-lg shadow-lg">
-                    <h2>Terima Kasih sudah mendaftar</h2>
-                    <p>Tunggu informasi berikutnya disosial media cps</p>
-                    <div className="flex justify-center">
-                  <button onClick={closePopup} className="text-center font-bold mt-8 mb-8" type="submit" style={{background: "#ba2025"}}>Tutup</button>
-                  </div>
-                  </div>
-                  </div>            
-                )}
+            </div>
           </form>
         </div>
       </div>
+      {isFormSubmitted && (
+        <div className="fixed inset-0 z-30 bg-opacity-80 bg-blur backdrop-filter backdrop-blur-md flex items-center justify-center">
+          <div
+            className="popup-content h-1/4 p-8 bg-white rounded-[30px] shadow-lg font-semibold"
+            style={{ border: "2px solid #ba2025" }}
+          >
+            <h2
+              className="flex justify-center pt-7 pb-16"
+              style={{ color: "#231f20" }}
+            >
+              Terima Kasih sudah mendaftar
+            </h2>
+            <div className="flex justify-center">
+              <a
+                href="/"
+                className="btn btn-ghost normal-case text-[17px] md:text-[25px] lg:ml-2 lg:text-[20px]"
+                style={{ backgroundColor: "#ba2025", color: "#f4f4f4" }}
+                onClick={closePopup}
+              >
+                CLOSE
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
-
