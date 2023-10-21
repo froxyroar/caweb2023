@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -41,13 +41,24 @@ interface FormData {
 
 export default function GeneralQuestionForm() {
   const {
+    
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>();
-
+  
+  const [showPopup, setShowPopup] = useState(false);
+  const openPopup = () => {
+    setShowPopup(true);
+  };
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+  
   function onSubmit(data: FormData) {
+    openPopup();
     console.log(data);
+    
   }
 
   return (
@@ -311,13 +322,25 @@ export default function GeneralQuestionForm() {
               </Label>
             </div>
             <div className="flex justify-center">
-              <Button className="mt-8 mb-8 item" type="submit" style={{background: "#ba2025"}}>
+              <Button onClick={openPopup} className="mt-8 mb-8 item " type="submit" style={{background: "#ba2025"}}>
                 Submit
               </Button>
-            </div>
+              </div>
+              {showPopup && (
+                <div className="fixed inset-0 z-30 overflow-hidden bg-opacity-80 bg-blur backdrop-filter backdrop-blur-md flex items-center justify-center">    
+                  <div className="popup-content w-96 p-8 bg-white rounded-lg shadow-lg">
+                    <h2>Terima Kasih sudah mendaftar</h2>
+                    <p>Tunggu informasi berikutnya disosial media cps</p>
+                    <div className="flex justify-center">
+                  <button onClick={closePopup} className="text-center font-bold mt-8 mb-8" type="submit" style={{background: "#ba2025"}}>Tutup</button>
+                  </div>
+                  </div>
+                  </div>            
+                )}
           </form>
         </div>
       </div>
     </div>
   );
 }
+
