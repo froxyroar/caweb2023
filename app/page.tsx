@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import VideoPlayer from "@/components/Videoplayer";
 import About from "@/components/About";
 import Course from "@/components/Course";
@@ -32,12 +32,12 @@ export default function Home() {
       <div>
         <SdanK />
       </div>
-      <div>
+      {/* <div>
         <Berkas />
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <Daftar />
-      </div>
+      </div> */}
       <div>
         <Footer />
       </div>

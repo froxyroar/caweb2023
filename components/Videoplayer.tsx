@@ -1,10 +1,12 @@
-import React from 'react'
-import Video from '@/components/Video'
+import React from "react";
+import Video from "@/components/Video";
 
 const Videoplayer = () => {
   return (
-    <Video />
-  )
-}
+    <>
+      <Video />
+    </>
+  );
+};
 
-export default Videoplayer
+export default Videoplayer;
