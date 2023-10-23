@@ -1,56 +1,53 @@
-import React, { CSSProperties } from "react";
-import {
-  Card,
-  CardHeader,
-  CardTitle
-} from "@/components/ui/card";
+import React from "react";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Benefits = () => {
-  const customStyle = {
-    color: '#021713',
-    backgroundColor: '#F4F4F4'
-  };
+  return (
+    <div className="bg-gray-100 py-16" id="benefit">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-gray-800">Benefits You Will Get</h1>
+      </div>
 
-  const cardStyle: CSSProperties = {
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    height: "250px",
-    width: "300px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: "20px",
-    margin: "12px", // Adjust the margin between cards
-    marginTop: "16px"
-  };
-
-  return (    
-    <div className="flex flex-col items-center justify-center min-h-screen" >
-    <h1 className="text-5xl font-bold text-center mb-20" style={customStyle} id="benefit">
-          Benefit you will get
-            </h1>
-      <div className="flex justify-around mx-4 sm:mx-8 p-4 sm:p-8 flex-wrap">
-        <div className="mr-4">
-          <Card style={cardStyle} className="bg-red-700 hover:bg-red-600 transform hover:scale-105 transition duration-300 ease-in-out">
-            <CardHeader>
-              <CardTitle className="text-center text-white"style={{ fontSize: "24px" }}>TAK</CardTitle>
+      <div className="flex justify-center flex-wrap">
+        <div className="m-4 max-w-sm">
+          <Card className="bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out rounded-lg">
+            <CardHeader className="bg-red-700 p-4 rounded-t-lg">
+              <CardTitle className="text-white text-2xl font-semibold">TAK</CardTitle>
             </CardHeader>
+            <div className="p-4">
+              <p className="text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                ac mauris at justo tincidunt fermentum.
+              </p>
+            </div>
           </Card>
         </div>
-        <div className="mr-4">
-          
-          <Card style={cardStyle} className="bg-red-700 hover:bg-red-600 transform hover:scale-105 transition duration-300 ease-in-out">
-            <CardHeader>
-              <CardTitle className="text-center text-white"style={{ fontSize: "24px" }}>E-CERTIFICATE</CardTitle>
+
+        <div className="m-4 max-w-sm">
+          <Card className="bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out rounded-lg">
+            <CardHeader className="bg-red-700 p-4 rounded-t-lg">
+              <CardTitle className="text-white text-2xl font-semibold">E-CERTIFICATE</CardTitle>
             </CardHeader>
+            <div className="p-4">
+              <p className="text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                ac mauris at justo tincidunt fermentum.
+              </p>
+            </div>
           </Card>
         </div>
-        <div className="mb-8 mr-4">
-          <Card style={cardStyle} className="bg-red-700 hover:bg-red-600 transform hover:scale-105 transition duration-300 ease-in-out">
-            <CardHeader>
-              <CardTitle className="text-center text-white" style={{ fontSize: "24px" }}>KNOWLEDGE</CardTitle>
+
+        <div className="m-4 max-w-sm">
+          <Card className="bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out rounded-lg">
+            <CardHeader className="bg-red-700 p-4 rounded-t-lg">
+              <CardTitle className="text-white text-2xl font-semibold">KNOWLEDGE</CardTitle>
             </CardHeader>
+            <div className="p-4">
+              <p className="text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                ac mauris at justo tincidunt fermentum.
+              </p>
+            </div>
           </Card>
         </div>
       </div>

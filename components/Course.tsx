@@ -5,43 +5,44 @@ import {
   CardTitle
 } from "@/components/ui/card";
 
-const Benefits = () => {
+const Course = () => {
   const customStyle = {
-    color: '#000000',  // Set text color to black (#000000)
+    color: '#000000',
     backgroundColor: '#F4F4F4'
   };
 
   const cardStyle: CSSProperties = {
     height: "250px",
     width: "250px",
-    backgroundColor: "transparent",  // Set background color to transparent
+    backgroundColor: "transparent",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    margin: "0 10px", // Adjust the margin between cards,
+    margin: "0 10px",
     backgroundRepeat: "no-repeat",
-    border: "none"  // Remove the border around the background image
+    border: "none",
+    transition: "transform .2s", // Add transition for smooth transform
   };
 
   const cardStylesWithBackgrounds = [
     {
       ...cardStyle,
       backgroundImage: "url(/linux.png)",
-      backgroundSize: "50%", // Adjust the image size (e.g., 80%)
-      backgroundPosition: "center" // Center the background image
+      backgroundSize: "50%",
+      backgroundPosition: "center"
     },
     {
       ...cardStyle,
       backgroundImage: "url(/iot.png)",
-      backgroundSize: "50%", // Adjust the image size (e.g., 80%)
-      backgroundPosition: "center" // Center the background image
+      backgroundSize: "50%",
+      backgroundPosition: "center"
     },
     {
       ...cardStyle,
       backgroundImage: "url(/webdev.png)",
-      backgroundSize: "50%", // Adjust the image size (e.g., 80%)
-      backgroundPosition: "center" // Center the background image
+      backgroundSize: "50%",
+      backgroundPosition: "center"
     },
   ];
 
@@ -53,7 +54,7 @@ const Benefits = () => {
       <div className="flex flex-col items-center justify-center mt-8" style={customStyle} id="benefit">
         <div className="flex justify-around mx-4 sm:mx-8 p-4 sm:p-8 flex-wrap">
           {cardStylesWithBackgrounds.map((style, index) => (
-            <div key={index} className="mb-40 mx-8">
+            <div key={index} className="mb-40 mx-8 transform hover:scale-105"> {/* Add hover effect */}
               <Card style={style}>
                 <CardHeader>
                 </CardHeader>
@@ -69,4 +70,4 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default Course;

@@ -32,9 +32,9 @@ export default function Home() {
       <div>
         <SdanK />
       </div>
-      {/* <div>
+      <div>
         <Berkas />
-      </div> */}
+      </div>
       {/* <div>
         <Daftar />
       </div> */}

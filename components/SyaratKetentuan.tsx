@@ -1,4 +1,3 @@
-// components/ContentSplit.tsx
 import React from 'react';
 
 const ContentSplit: React.FC = () => {
@@ -6,7 +5,7 @@ const ContentSplit: React.FC = () => {
 
   return (
     <div className="flex justify-center items-center p-1 mt-4 mb-40" id='daftar'>
-      <div style={{ backgroundColor: customColor , width: '600px', height: '260px'}} className="rounded-2xl p-10 w-full max-w-xl text-white bg-red-700 hover:bg-red-600 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-2xl">
+      <div style={{ backgroundColor: customColor}} className="rounded-2xl p-10 w-full max-w-xl text-white bg-red-700 hover:bg-red-600 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-2xl md:w-3/4 md:h-auto">
         <div >
           <h2 className="text-xl font-bold mb-8 text-center">
             Syarat dan Ketentuan
