@@ -7,15 +7,14 @@ import Berkas from "@/components/Berkas";
 import Footer from "@/components/Footer";
 import NavHome from "@/components/navbarHome";
 import React from "react";
-import Skberkas from "@/components/skBerkas";
 import Partner from "@/components/Partner";
+import Skberkas from "@/components/skBerkas";
 
 export default function Home() {
-
   return (
     <main>
       <div className="sticky top-0 z-50">
-      <NavHome />
+        <NavHome />
       </div>
       <div className="mb-32">
         <VideoPlayer />
@@ -41,6 +40,9 @@ export default function Home() {
       <div className="mb-32 mt-32">
         <Partner />
       </div>
+      {/* <div>
+        <Daftar />
+      </div> */}
       <div>
         <Footer />
       </div>
