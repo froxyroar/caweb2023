@@ -5,11 +5,16 @@ import Course from "@/components/Course";
 import Benefit from "@/components/Benefit";
 import SdanK from "@/components/SyaratKetentuan";
 import Berkas from "@/components/Berkas";
-import Daftar from "@/components/Daftar";
+// import Daftar from "@/components/Daftar";
 import Footer from "@/components/Footer";
 import NavHome from "@/components/navbarHome";
+import Medpart from "@/components/medpart";
 import React from "react";
+<<<<<<< HEAD
 import Partner from "@/components/Partner";
+=======
+import Skberkas from "@/components/skBerkas";
+>>>>>>> 39a415518d0108598270e71f5ff15ca7c21e293a
 
 export default function Home() {
   return (
@@ -29,12 +34,18 @@ export default function Home() {
       <div>
         <Course />
       </div>
-      <div>
+      <div className=" md:hidden">
         <SdanK />
       </div>
-      {/* <div>
+      <div className=" md:hidden">
         <Berkas />
-      </div> */}
+      </div>
+      <div className="hidden md:block md:mb-52 md:mt-20">
+        <Skberkas />
+      </div>
+      <div className="mb-24 md:mb-40">
+        <Medpart />
+      </div>
       {/* <div>
         <Daftar />
       </div> */}
