@@ -79,12 +79,34 @@ const Video: React.FC = () => {
     <div>
       <div
         style={{
+          width: "60%",
+          margin: "2vh auto 0",
+          borderRadius: "12px",
+          overflow: "hidden",
+          boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
+        }}
+        className="hidden lg:block"
+      >
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          ref={videoRef}
+          style={{ width: "100%", borderRadius: "12px" }}
+        >
+          <source src="/teaser.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div
+        style={{
           width: "82%",
           margin: "2vh auto 0",
           borderRadius: "12px",
           overflow: "hidden",
           boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
         }}
+        className="lg:hidden"
       >
         <video
           autoPlay
@@ -102,7 +124,7 @@ const Video: React.FC = () => {
         <div className="rounded-lg p-5">
           <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
             <div
-              className="flex flex-col w-16 md:w-24 p-3 gap-3 text-center items-center justify-center font-mono bg-neutral rounded-box text-neutral-content"
+              className="flex flex-col w-18 md:w-24 p-3 gap-3 text-center items-center justify-center font-mono bg-neutral rounded-box text-neutral-content"
               style={{ background: "#f8cdce", color: "#231f20" }}
             >
               <span className="countdown font-mono text-5xl">
@@ -113,7 +135,7 @@ const Video: React.FC = () => {
               days
             </div>
             <div
-              className="flex flex-col w-16 md:w-24 p-3 gap-3 text-center items-center justify-center font-mono bg-neutral rounded-box text-neutral-content"
+              className="flex flex-col w-18 md:w-24 p-3 gap-3 text-center items-center justify-center font-mono bg-neutral rounded-box text-neutral-content"
               style={{ background: "#f8cdce", color: "#231f20" }}
             >
               <span className="countdown font-mono text-5xl">
@@ -124,7 +146,7 @@ const Video: React.FC = () => {
               hours
             </div>
             <div
-              className="flex flex-col w-16 md:w-24 p-3 gap-3 text-center items-center justify-center font-mono bg-neutral rounded-box text-neutral-content"
+              className="flex flex-col w-18 md:w-24 p-3 gap-3 text-center items-center justify-center font-mono bg-neutral rounded-box text-neutral-content"
               style={{ background: "#f8cdce", color: "#231f20" }}
             >
               <span className="countdown font-mono text-5xl">
@@ -135,7 +157,7 @@ const Video: React.FC = () => {
               min
             </div>
             <div
-              className="flex flex-col w-16 md:w-24 p-3 gap-3 text-center items-center justify-center font-mono bg-neutral rounded-box text-neutral-content"
+              className="flex flex-col w-18 md:w-24 p-3 gap-3 text-center items-center justify-center font-mono bg-neutral rounded-box text-neutral-content"
               style={{ background: "#f8cdce", color: "#231f20" }}
             >
               <span className="countdown font-mono text-5xl">
@@ -159,8 +181,8 @@ const Video: React.FC = () => {
             className="grid grid-flow-row gap-5 text-center auto-rows-max justify-center mt-8 md:hidden "
             style={{ color: "#231f20" }}
           >
-            <div>
-              <span className="countdown font-mono text-4xl">
+            <div className="text-2xl">
+              <span className="countdown font-mono text-3xl pr-2">
                 <span id="counterElement" style={participantsstyle}></span>
               </span>
               Participants left
@@ -169,7 +191,7 @@ const Video: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center md:mt-20">
+      <div className="flex flex-col items-center md:mt-7">
         <p
           className="text-center text-lg md:text-xl lg:text-2xl"
           style={{ color: "#231f20" }}

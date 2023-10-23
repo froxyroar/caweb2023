@@ -10,17 +10,20 @@ const RegistrationButton = () => {
       window.location.href = "/pendaftaran";
     } else {
       // Show a pop-up notification if the maximum limit is reached
-      alert("Registration is closed. The maximum limit of 80 participants has been reached.");
+      window.location.href = "/fullform";
+      
     }
   };
 
   return (
     <button
       onClick={handleDaftarClick}
-      className="btn text-white border border-black rounded-none"
+      className="btn font-bold rounded-xl border border-black"
       style={{
-        backgroundColor: "#000000",
-        boxShadow: "5px 5px 0px 0px rgba(0, 0, 0, 0.2)", // Larger sharp shadow effect
+        color:"#231f20",
+        fontSmooth:"1px solid",
+        backgroundColor: "#f4f4f4",
+        boxShadow: "0px 0px 3px 3px rgba(0, 0, 0, 0.7)", // Larger sharp shadow effect
       }}
     >
       {participantsLeft >= slot ? "Register" : "Registration Closed"}

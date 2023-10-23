@@ -23,11 +23,22 @@
 
 .partnerWrapUlLi:hover .partnerWrapUlLiImg {
   opacity: 1;
+  scale: 1.5;
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
+@media (min-width: 1024px) {
   .partnerWrapUlLi {
-    flex-basis: 50%;
+    flex-basis: 15%;
+  }
+}
+@media (max-width: 1023px) {
+  .partnerWrapUlLi {
+    flex-basis: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .partnerWrapUlLi {
+    flex-basis: 30%;
   }
 }
