@@ -1,4 +1,5 @@
 import React from "react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const Skberkas = () => {
   return (
@@ -15,17 +16,17 @@ const Skberkas = () => {
             className="text-[21px] font-bold text-center"
             style={{ color: "#231f20" }}
           >
-            Syarat dan Ketentuan
+            Terms and Conditions
           </h2>
           <ol
             className="list-decimal ml-10 space-y-2 mx-auto text-base leading-relaxed text-[19px] lg:ml-20 lg:text-[21px]"
             style={{ color: "#231f20" }}
           >
-            <li className="">Bertakwa kepada Tuhan Yang Maha Esa</li>
-            <li className="">Mahasiswa aktif Telkom University</li>
-            <li className="">Mahasiswa FTE & FRI 2021, 2022, 2023</li>
+            <li className="">Fear to the One God</li>
+            <li className="">An Active Student of Telkom University</li>
+            <li className="">Student of FTE and FRI Batch 2021,2022, 2023</li>
             <li className="">
-              Memiliki motivasi dan minat belajar yang tinggi
+              Have Motivation and High Spirit in Learning
             </li>
           </ol>
         </div>

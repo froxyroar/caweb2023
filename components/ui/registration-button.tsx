@@ -23,7 +23,7 @@ const RegistrationButton = () => {
         boxShadow: "5px 5px 0px 0px rgba(0, 0, 0, 0.2)", // Larger sharp shadow effect
       }}
     >
-      {participantsLeft >= slot ? "Daftar" : "Registration Closed"}
+      {participantsLeft >= slot ? "Register" : "Registration Closed"}
     </button>
   );
 };

@@ -17,10 +17,13 @@ const About = () => {
         <div style={{color: "#231f20"}}>
           <h1 className="flex justify-center text-[32px] font-bold md:block md:text-[40px]">CYBER ACADEMY</h1>
           <p className="py-6 md:px-10 lg:px-0">
-            Cyber Academy adalah sebuah rangkaian studi grup yang inovatif dan
-            dinamis, menghadirkan platform belajar yang memungkinkan partisipan
-            untuk merajut jaringan pengetahuan yang luas.
-          </p>
+  Welcome to Cyber Academy, your gateway to an exciting and dynamic learning experience. We're not just a place to study; we're a vibrant community where knowledge knows no bounds.
+
+  At Cyber Academy, you'll embark on a journey of exploration and innovation. Our program fosters collaboration, helping you build a diverse network of knowledge that goes beyond the classroom. We believe in the power of learning together, fostering new connections, and inspiring each other.
+
+  Whether you're a seasoned learner or just starting your educational voyage, Cyber Academy is your partner in personal and professional growth. Join us, and together, let's embrace the limitless possibilities of knowledge and connection.
+</p>
+
         </div>
       </div>
     </div>
