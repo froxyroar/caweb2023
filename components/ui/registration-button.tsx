@@ -10,7 +10,7 @@ const RegistrationButton = () => {
       window.location.href = "/pendaftaran";
     } else {
       // Show a pop-up notification if the maximum limit is reached
-      alert("Registration is closed. The maximum limit of 60 participants has been reached.");
+      alert("Registration is closed. The maximum limit of 80 participants has been reached.");
     }
   };
 
