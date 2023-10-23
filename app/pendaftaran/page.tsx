@@ -5,14 +5,14 @@ import NavForm from "@/components/navbarform";
 
 const page = () => {
   return (
-    <main>
+    <>
       <div className="sticky top-0 z-50">
         <NavForm />
       </div>
       <div>
         <Form />
       </div>
-    </main>
+    </>
   );
 };
 

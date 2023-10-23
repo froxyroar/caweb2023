@@ -9,13 +9,13 @@ import Daftar from "@/components/Daftar";
 import Footer from "@/components/Footer";
 import NavHome from "@/components/navbarHome";
 import React from "react";
+import Partner from "@/components/Partner";
 
 export default function Home() {
-
   return (
     <main>
       <div className="sticky top-0 z-50">
-      <NavHome />
+        <NavHome />
       </div>
       <div>
         <VideoPlayer />
@@ -38,6 +38,9 @@ export default function Home() {
       {/* <div>
         <Daftar />
       </div> */}
+      <div>
+        <Partner />
+      </div>
       <div>
         <Footer />
       </div>

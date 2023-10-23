@@ -1,0 +1,33 @@
+.partnerWrapUl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partnerWrapUlLi {
+  flex-basis: 20%;
+  height: 123px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1px;
+  margin-top: -1px;
+  cursor: pointer;
+}
+
+.partnerWrapUlLiImg {
+  opacity: 0.5;
+  transition: 0.3s linear;
+}
+
+.partnerWrapUlLi:hover .partnerWrapUlLiImg {
+  opacity: 1;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .partnerWrapUlLi {
+    flex-basis: 50%;
+  }
+}
