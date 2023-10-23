@@ -12,7 +12,7 @@ const Benefits = () => {
         <div className="m-4 max-w-sm">
           <Card className="bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out rounded-lg">
             <CardHeader className="bg-red-700 p-4 rounded-t-lg">
-              <CardTitle className="text-white text-2xl font-semibold">TAK</CardTitle>
+              <h1 className="text-white text-xl font-semibold mt-2 mb-2">RELATION</h1>
             </CardHeader>
             <div className="p-4">
               <p className="text-gray-800">
@@ -26,7 +26,7 @@ const Benefits = () => {
         <div className="m-4 max-w-sm">
           <Card className="bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out rounded-lg">
             <CardHeader className="bg-red-700 p-4 rounded-t-lg">
-              <CardTitle className="text-white text-2xl font-semibold">E-CERTIFICATE</CardTitle>
+              <h1 className="text-white text-xl font-semibold mt-2 mb-2">E-CERTIFICATE</h1>
             </CardHeader>
             <div className="p-4">
               <p className="text-gray-800">
@@ -40,7 +40,7 @@ const Benefits = () => {
         <div className="m-4 max-w-sm">
           <Card className="bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out rounded-lg">
             <CardHeader className="bg-red-700 p-4 rounded-t-lg">
-              <CardTitle className="text-white text-2xl font-semibold">KNOWLEDGE</CardTitle>
+              <h1 className="text-white text-xl font-semibold mt-2 mb-2">KNOWLEDGE</h1>
             </CardHeader>
             <div className="p-4">
               <p className="text-gray-800">
