@@ -3,12 +3,15 @@ import React from "react";
 const Skberkas = () => {
   return (
     <div className="container h-96" id="skberkas">
-      <div className="flex justify-center text-[22px] md:mb-14 lg:mb-16" style={{color:"#231f20"}}>
-        REQUIEREMENT
-      </div>
+      <h1
+        className="flex justify-center text-3xl font-bold mb-12 md:text lg:text"
+        style={{ color: "#231f20" }}
+      >
+       ❯ Requirement ❮
+      </h1>
       <div className="flex h-full flex-row items-center">
         <div
-          className="w-1/2 justify-center items-center space-y-10 -mt-10 p-1 lg:space-y-20 "
+          className="w-1/2 justify-center items-center space-y-7 -mt-3 p-[19px] lg:space-y-10 lg:p-[40px]"
           style={{ backgroundColor: "ba2025" }}
         >
           <h2
@@ -18,7 +21,7 @@ const Skberkas = () => {
             Syarat dan Ketentuan
           </h2>
           <ol
-            className="list-decimal ml-10 space-y-2 mx-auto text-base leading-relaxed text-[19px] lg:ml-20 lg:text-[21px]"
+            className="list-decimal ml-10 space-y-2 mx-auto text-base leading-relaxed text-[19px] lg:text-[20px] lg:space-y-4"
             style={{ color: "#231f20" }}
           >
             <li className="">Bertakwa kepada Tuhan Yang Maha Esa</li>

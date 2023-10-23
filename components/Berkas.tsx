@@ -3,16 +3,13 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 const Berkas = () => {
   return (
-    <div className="py-16 md:container md:py-0 " id="berkas">
+    <div className="container p-2" id="berkas">
       <div className="text-center mb-8">
-        <h1 className="text-[35px] font-bold text-gray-800 md:hidden">
-          Documents
-        </h1>
         {/* <h1 className="text-[15px] font-bold text-gray-600 md:hidden">
           Click object to see more
         </h1> */}
       </div>
-      <div className="join join-vertical w-full">
+      <div className="join join-vertical">
         <div
           className="collapse collapse-arrow join-item border border-base-300"
           style={{ backgroundColor: "#ba2025" }}

@@ -4,7 +4,7 @@ import bgImage from "@/public/tenda.png";
 
 const About = () => {
   return (
-    <div className="hero min-h-screen" id='about'>
+    <div className="hero min-h-screen -my-24" id='about'>
       <div className="hero-content flex-col lg:flex-row">
         <Image
           src={bgImage}
@@ -15,8 +15,8 @@ const About = () => {
           priority={true}
         />
         <div style={{color: "#231f20"}}>
-          <h1 className="flex justify-center text-[32px] font-bold md:block md:text-[40px]">CYBER ACADEMY</h1>
-          <p className="py-6 md:px-10 lg:px-0">
+          <h1 className="flex justify-center text-[32px] font-bold  md:text-[40px]">CYBER ACADEMY</h1>
+          <p className="text-center py-6 md:px-10 lg:px-0 lg:text-left lg:text-[20px]">
             Cyber Academy adalah sebuah rangkaian studi grup yang inovatif dan
             dinamis, menghadirkan platform belajar yang memungkinkan partisipan
             untuk merajut jaringan pengetahuan yang luas.

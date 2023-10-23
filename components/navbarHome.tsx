@@ -32,10 +32,10 @@ const NavHome = () => {
   return (
     <>
       <div className="navbar md:h-20" style={navbarStyle}>
-        <div className="navbar-start lg:ml-40 md:ml-8">
-          <div className="hidden md:flex flex-row items-center">
+        <div className="navbar-start md:ml-2 lg:ml-5 ">
+          <div className="hidden lg:flex flex-row items-center">
             <a
-              className="text-[19.4px] font-forest-road font-bold mt-1 ml-2 lg:text-[32px]"
+              className="text-[22px] font-forest-road font-bold mt-1 lg:text-[28px]"
               style={{ color: "#ba2025" }}
               href="/"
               rel="noopener noreferrer"
@@ -43,7 +43,7 @@ const NavHome = () => {
               CYBER ACADEMY
             </a>
           </div>
-          <div className="drawer md:hidden">
+          <div className="drawer lg:hidden">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
               {/* Page content here */}
@@ -74,7 +74,14 @@ const NavHome = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 w-44 min-h-full text-base-content" style={{background:"#f4f4f4", color:"#231f20", border:"1px solid"}}>
+              <ul
+                className="menu p-4 w-44 min-h-full text-base-content md:w-72"
+                style={{
+                  background: "#f4f4f4",
+                  color: "#231f20",
+                  border: "1px solid",
+                }}
+              >
                 {/* Sidebar content here */}
                 <li>
                   <ScrollLink
@@ -98,6 +105,16 @@ const NavHome = () => {
                 </li>
                 <li>
                   <ScrollLink
+                    to="course"
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                  >
+                    <button>Course</button>
+                  </ScrollLink>
+                </li>
+                <li className="md:hidden">
+                  <ScrollLink
                     to="daftar"
                     smooth={true}
                     offset={-100}
@@ -106,58 +123,33 @@ const NavHome = () => {
                     <button>Requirement</button>
                   </ScrollLink>
                 </li>
+                <li className="hidden md:block">
+                  <ScrollLink
+                    to="skberkas"
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                  >
+                    <button>Requirement</button>
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink
+                    to="partner"
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                  >
+                    <button>Media Partner</button>
+                  </ScrollLink>
+                </li>
               </ul>
             </div>
           </div>
-          {/* <div className="dropdown md:hidden">
-            <label tabIndex={0} className="btn btn-ghost" onClick={toggleDropdown}>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" style={{ color: "#ba2025" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </label>
-            {isDropdownOpen && (
-              <ul
-                tabIndex={0}
-                className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-32" // Adjust 'right' here
-                style={{
-                  backgroundColor: "#f4f4f4",
-                  color: "#000000",
-                  border: "1px solid #ba2025",
-                }}
-              >
-                <li>
-                  <ScrollLink to="about" smooth={true} offset={-100} duration={500}>
-                    <button onClick={toggleDropdown}>About</button>
-                  </ScrollLink>
-                </li>
-                <li>
-                  <ScrollLink to="benefit" smooth={true} offset={-100} duration={500}>
-                    <button onClick={toggleDropdown}>Benefit</button>
-                  </ScrollLink>
-                </li>
-                <li>
-                  <ScrollLink to="daftar" smooth={true} offset={-100} duration={500}>
-                    <button onClick={toggleDropdown}>Daftar</button>
-                  </ScrollLink>
-                </li>
-              </ul>
-            )}
-          </div> */}
-
-          {/* <div className="flex items-center -ml-1 md:hidden">
-            <a
-              className="text-[19.4px] font-forest-road font-bold mt-1 "
-              style={{ color: "#ba2025" }}
-              href="/"
-              rel="noopener noreferrer"
-            >
-              CYBER ACADEMY
-            </a>
-          </div> */}
         </div>
         <div className="navbar-center">
           <a
-            className="text-[19.4px] font-forest-road font-bold mt-1 md:hidden"
+            className="text-[23px] font-forest-road font-bold mt-1 md:text-[27px] lg:hidden"
             style={{ color: "#ba2025" }}
             href="/"
             rel="noopener noreferrer"
@@ -165,7 +157,7 @@ const NavHome = () => {
             CYBER ACADEMY
           </a>
           <div
-            className="hidden md:block items-center justify-end -mt-[1px] text-[18px] lg:text-[22px]"
+            className="hidden lg:block items-center justify-end -mt-[1px] text-[17px] lg:text-[20px]"
             style={{ color: "#231f20" }}
           >
             <ul className="flex space-x-6">
@@ -191,6 +183,26 @@ const NavHome = () => {
               </li>
               <li>
                 <ScrollLink
+                  to="course"
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  <button>Course</button>
+                </ScrollLink>
+              </li>
+              <li className="md:hidden">
+                <ScrollLink
+                  to="daftar"
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  <button>Requirement</button>
+                </ScrollLink>
+              </li>
+              <li className="hidden md:block">
+                <ScrollLink
                   to="skberkas"
                   smooth={true}
                   offset={-100}
@@ -199,11 +211,21 @@ const NavHome = () => {
                   <button>Requirement</button>
                 </ScrollLink>
               </li>
+              <li>
+                <ScrollLink
+                  to="partner"
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  <button>Media Partner</button>
+                </ScrollLink>
+              </li>
             </ul>
           </div>
         </div>
         <div
-          className="navbar-end md:mr-8 lg:mr-40 "
+          className="navbar-end md:mr-0 lg:mr-5 "
           style={{ color: "#231f20" }}
         >
           <div className="scale-75 md:scale-80 lg:scale-100">

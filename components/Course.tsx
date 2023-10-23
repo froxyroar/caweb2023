@@ -1,69 +1,53 @@
-import React, { CSSProperties } from "react";
-import {
-  Card,
-  CardHeader,
-  CardTitle
-} from "@/components/ui/card";
+import React from "react";
 
 const Course = () => {
-  const customStyle = {
-    color: '#000000',
-    backgroundColor: '#F4F4F4'
-  };
-
-  const cardStyle: CSSProperties = {
-    height: "250px",
-    width: "250px",
-    backgroundColor: "transparent",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    margin: "0 10px",
-    backgroundRepeat: "no-repeat",
-    border: "none",
-    transition: "transform .2s", // Add transition for smooth transform
-  };
-
-  const cardStylesWithBackgrounds = [
-    {
-      ...cardStyle,
-      backgroundImage: "url(/linux.png)",
-      backgroundSize: "50%",
-      backgroundPosition: "center"
-    },
-    {
-      ...cardStyle,
-      backgroundImage: "url(/iot.png)",
-      backgroundSize: "50%",
-      backgroundPosition: "center"
-    },
-    {
-      ...cardStyle,
-      backgroundImage: "url(/webdev.png)",
-      backgroundSize: "50%",
-      backgroundPosition: "center"
-    },
-  ];
-
   return (
-    <div className="text-center mt-8">
-      <h1 className='text-5xl font-bold mb-16'>
-        What will you learn?
+    <div className="container" id="course">
+      <h1
+        className="flex justify-center text-2xl font-bold mb-16 md:text-3xl md:mb-20"
+        style={{ color: "#231f20" }}
+      >
+       What You Will learn ??
       </h1>
-      <div className="flex flex-col items-center justify-center mt-8" style={customStyle} id="benefit">
-        <div className="flex justify-around mx-4 sm:mx-8 p-4 sm:p-8 flex-wrap">
-          {cardStylesWithBackgrounds.map((style, index) => (
-            <div key={index} className="mb-40 mx-8 transform hover:scale-105"> {/* Add hover effect */}
-              <Card style={style}>
-                <CardHeader>
-                </CardHeader>
-              </Card>
-              <div className="text-center" style={{ marginTop: "16px", fontSize: "20px"}} >
-                {index === 0 ? "Linux" : index === 1 ? "IoT" : "Web Development"}
-              </div>
-            </div>
-          ))}
+      <div className="flex flex-wrap gap-10 justify-center md:gap-14 lg:gap-20">
+        <div className="flex flex-col items-center">
+          <img
+            className="mask mask-squircle w-32 drop-shadow-xl md:w-40 lg:w-52"
+            src="/linux.png"
+            alt="linux"
+          />
+          <h1
+            className="text-center mt-4 font-semibold text-[24px]"
+            style={{ color: "#231f20" }}
+          >
+            Linux
+          </h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <img
+            className="mask mask-squircle w-32 drop-shadow-xl md:w-40 lg:w-52"
+            src="/iot.png"
+            alt="linux"
+          />
+          <h1
+            className="text-center mt-4 font-semibold text-[24px]"
+            style={{ color: "#231f20" }}
+          >
+            IOT
+          </h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <img
+            className="mask mask-squircle w-32 drop-shadow-xl md:w-40 lg:w-52"
+            src="/webdev.png"
+            alt="linux"
+          />
+          <h1
+            className="text-center mt-4 font-semibold text-[24px]"
+            style={{ color: "#231f20" }}
+          >
+            WebDev
+          </h1>
         </div>
       </div>
     </div>

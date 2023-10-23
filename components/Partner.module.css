@@ -1,0 +1,44 @@
+.partnerWrapUl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partnerWrapUlLi {
+  flex-basis: 20%;
+  height: 123px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1px;
+  margin-top: -1px;
+  cursor: pointer;
+}
+
+.partnerWrapUlLiImg {
+  opacity: 0.5;
+  transition: 0.3s linear;
+}
+
+.partnerWrapUlLi:hover .partnerWrapUlLiImg {
+  opacity: 1;
+  scale: 1.5;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (min-width: 1024px) {
+  .partnerWrapUlLi {
+    flex-basis: 15%;
+  }
+}
+@media (max-width: 1023px) {
+  .partnerWrapUlLi {
+    flex-basis: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .partnerWrapUlLi {
+    flex-basis: 30%;
+  }
+}
