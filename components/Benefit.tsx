@@ -9,7 +9,7 @@ const Benefits = () => {
         className="flex justify-center text-2xl font-bold mb-16 lg:text-3xl"
         style={{ color: "#231f20" }}
       >
-        ❯ Benefit you Will Get ❮
+        ❯ Benefit You Will Get ❮
       </h1>
       <div className="min-w-screen md:hidden">
         <div className="flex flex-wrap">

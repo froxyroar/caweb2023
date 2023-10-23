@@ -17,10 +17,10 @@ export default function Home() {
       <div className="sticky top-0 z-50">
       <NavHome />
       </div>
-      <div>
+      <div className="mb-32">
         <VideoPlayer />
       </div>
-      <div>
+      <div className="mb-32">
         <About />
       </div>
       <div className="mb-32">
