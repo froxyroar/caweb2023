@@ -246,7 +246,7 @@ export default function GeneralQuestionForm() {
                         <Checkbox checked={field.value} onCheckedChange={field.onChange} />
                       </FormControl>
                       <div className="space-y-1 leading-none">
-                        <FormLabel>Use different settings for my mobile devices</FormLabel>
+                        <FormLabel>I have filled in all the required data.</FormLabel>
                       </div>
                       <FormMessage />
                     </FormItem>
