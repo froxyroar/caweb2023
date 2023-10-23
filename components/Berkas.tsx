@@ -12,7 +12,7 @@ const Berkas = () => {
         <div className="m-4 flex-grow min-w-min max-w-xs">
           <Card className="bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out rounded-lg h-full">
             <CardHeader className="bg-red-700 p-4 rounded-t-lg flex items-center justify-center">
-              <CardTitle className="text-white text-sm font-semibold">Creative CV</CardTitle>
+              <h1 className="text-white text-xl font-semibold">Creative CV</h1>
             </CardHeader>
             <CardContent>
               <p className="text-gray-800 text-2 mt-4">
@@ -25,7 +25,7 @@ const Berkas = () => {
         <div className="m-4 flex-grow min-w-min max-w-xs">
           <Card className="bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out rounded-lg h-full">
             <CardHeader className="bg-red-700 p-4 rounded-t-lg flex items-center justify-center">
-              <CardTitle className="text-white text-sm font-semibold">Full Body Photo</CardTitle>
+              <h1 className="text-white text-xl font-semibold">Full Body Photo</h1>
             </CardHeader>
             <CardContent>
               <ul className="text-gray-800 text-2 mt-4">
@@ -40,7 +40,7 @@ const Berkas = () => {
         <div className="m-4 flex-grow min-w-min max-w-xs">
           <Card className="bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out rounded-lg h-full">
             <CardHeader className="bg-red-700 p-4 rounded-t-lg flex items-center justify-center">
-              <CardTitle className="text-white text-sm font-semibold">Self Description</CardTitle>
+              <h1 className="text-white text-xl font-semibold">Self Description</h1>
             </CardHeader>
             <CardContent>
               <p className="text-gray-800 text-2 mt-4">
@@ -53,7 +53,7 @@ const Berkas = () => {
         <div className="m-4 flex-grow min-w-min max-w-xs">
           <Card className="bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out rounded-lg h-full">
             <CardHeader className="bg-red-700 p-4 rounded-t-lg flex items-center justify-center">
-              <CardTitle className="text-white text-sm font-semibold">Vision, Mission, and Motivation</CardTitle>
+              <h1 className="text-white text-lg font-semibold">Vision, Mission, and Motivation</h1>
             </CardHeader>
             <CardContent>
               <p className="text-gray-800 text-2 mt-4">
@@ -66,7 +66,7 @@ const Berkas = () => {
         <div className="m-4 flex-grow min-w-min max-w-xs">
           <Card className="bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out rounded-lg h-full">
             <CardHeader className="bg-red-700 p-4 rounded-t-lg flex items-center justify-center">
-              <CardTitle className="text-white text-sm font-semibold">Essay</CardTitle>
+              <h1 className="text-white text-xl font-semibold">Essay</h1>
             </CardHeader>
             <CardContent>
               <p className="text-gray-800 text-2 mt-4">
