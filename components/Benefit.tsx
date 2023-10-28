@@ -35,8 +35,7 @@ const Benefits = () => {
                 <div className="p-4">
                   <p className="text-gray-800">
                     Expanding your network and building relationships with new
-                    people can open up exciting opportunities for personal and
-                    professional growth.
+                    people 
                   </p>
                 </div>
               </Card>
@@ -207,8 +206,7 @@ const Benefits = () => {
                 <div className="p-4">
                   <p className="text-gray-800">
                     Expanding your network and building relationships with new
-                    people can open up exciting opportunities for personal and
-                    professional growth.
+                    people
                   </p>
                 </div>
               </Card>
@@ -221,14 +219,14 @@ const Benefits = () => {
                     alt="certificate"
                     className="w-12"
                   />
-                  <h1 className="text-white text-[13.3px] font-semibold mt-2 mb-2">
+                  <h1 className="text-white text-[12px] font-semibold mt-4 mb-2">
                     E-CERTIFICATE
                   </h1>
                 </CardHeader>
                 <div className="p-4">
                   <p className="text-gray-800">
                     as recognition of your dedication and commitment to
-                    learning.
+                    learning
                   </p>
                 </div>
               </Card>
@@ -244,7 +242,7 @@ const Benefits = () => {
                 <div className="p-4">
                   <p className="text-gray-800">
                     your knowledge and understanding of the subject matter
-                    significantly expanded.
+                    significantly expanded
                   </p>
                 </div>
               </Card>
@@ -260,7 +258,7 @@ const Benefits = () => {
                   </h1>
                 </CardHeader>
                 <div className="p-4">
-                  <p className="text-gray-800">Practice makes perfect.</p>
+                  <p className="text-gray-800">Practice makes perfect</p>
                 </div>
               </Card>
             </div>
@@ -279,7 +277,7 @@ const Benefits = () => {
                 <div className="p-4">
                   <p className="text-gray-800">
                     valuable experience that enhances your understanding of the
-                    subject and fosters collaborative learning.
+                    subject and fosters collaborative learning
                   </p>
                 </div>
               </Card>
@@ -301,8 +299,7 @@ const Benefits = () => {
                 <div className="p-4">
                   <p className="text-gray-800 text-[19.3px]">
                     Expanding your network and building relationships with new
-                    people can open up exciting opportunities for personal and
-                    professional growth.
+                    people 
                   </p>
                 </div>
               </Card>
@@ -315,14 +312,14 @@ const Benefits = () => {
                     alt="certificate"
                     className="w-12"
                   />
-                  <h1 className="text-white text-[22px] font-semibold mt-2 mb-2">
+                  <h1 className="text-white text-[20px] font-semibold mt-2 mb-2">
                     E-CERTIFICATE
                   </h1>
                 </CardHeader>
                 <div className="p-4">
-                  <p className="text-gray-800 text-[22px]">
+                  <p className="text-gray-800 text-[20px] mt-2">
                     as recognition of your dedication and commitment to
-                    learning.
+                    learning
                   </p>
                 </div>
               </Card>
@@ -336,9 +333,9 @@ const Benefits = () => {
                   </h1>
                 </CardHeader>
                 <div className="p-4">
-                  <p className="text-gray-800 text-[22px]">
+                  <p className="text-gray-800 text-[20px] mt-2">
                     your knowledge and understanding of the subject matter
-                    significantly expanded.
+                    significantly expanded
                   </p>
                 </div>
               </Card>
@@ -354,7 +351,7 @@ const Benefits = () => {
                   </h1>
                 </CardHeader>
                 <div className="p-4">
-                  <p className="text-gray-800 text-[22px]">Practice makes perfect.</p>
+                  <p className="text-gray-800 text-[22px] mt-2">Practice makes perfect</p>
                 </div>
               </Card>
             </div>
@@ -371,9 +368,9 @@ const Benefits = () => {
                   </h1>
                 </CardHeader>
                 <div className="p-4">
-                  <p className="text-gray-800 text-[22px]">
+                  <p className="text-gray-800 text-[20px] mt-2">
                     valuable experience that enhances your understanding of the
-                    subject and fosters collaborative learning.
+                    subject and fosters collaborative learning
                   </p>
                 </div>
               </Card>
